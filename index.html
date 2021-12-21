@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scalwe=1.0,user-scalable=n0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yuedu</title>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .a1 {
+            width: 600px;
+            height: 320px;
+            margin-left: 100px;
+            background-image: linear-gradient(135deg, #F6D242 10%, #FF52E5 100%);
+
+        }
+
+        .a1 img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .a1 p {
+            margin-left: 50px;
+            margin-top: -30px;
+        }
+
+        .tap1 {
+            float: left;
+        }
+
+        .tap1 ul {
+            margin-top: 0px;
+            width: 157px;
+            height: 29px;
+            margin-left: 20px;
+            padding: 0px;
+            padding-top: 4px;
+            padding-bottom: 2px;
+            border-radius: 20px;
+            background-color: #e0e0e0;
+        }
+
+        .tap1 li {
+            float: left;
+            font-size: 14px;
+            text-align: center;
+            width: 70px;
+            height: 28px;
+            border-radius: 30px;
+            line-height: 28px;
+            margin-left: 7px;
+            cursor: pointer;
+
+        }
+
+
+        .active1 {
+            background-color: #1296db;
+            font-family: cursive;
+            text-shadow: 6px 2px 2px #333;
+            color: #fff;
+
+        }
+
+        .y1s {
+            display: none;
+            width: 530px;
+            height: 170px;
+            margin-left: 35px;
+            background-image: -moz-linear-gradient(0deg, rgb(238, 255, 184), rgb(238, 163, 255));
+
+            background-image: -webkit-linear-gradient(0deg, rgb(238, 255, 184), rgb(238, 163, 255));
+
+            background-image: linear-gradient(0deg, rgb(238, 255, 184), rgb(238, 163, 255));
+        }
+
+        .y1 .y1l {
+            cursor: pointer;
+            width: 125px;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 25px;
+            padding-left: 15px;
+            position: relative;
+            margin-top: 30px;
+            float: left;
+            color: #282a2d;
+            background-image: linear-gradient(135deg, #FFD3A5 10%, #FD6585 100%);
+        }
+
+        .y1 span {
+            position: absolute;
+            right: 10px;
+            /* line-height: 30px; */
+            color: #e8e9f2;
+            /* margin-top: 10px; */
+        }
+
+        .y1l:hover {
+            background-image: linear-gradient(135deg, #52E5E7 10%, #130CB7 100%);
+            top: -2px;
+        }
+
+        .y1l:hover span {
+            transform: rotate(90deg);
+        }
+
+        /* a2 */
+        .a2 {
+
+            width: 600px;
+            height: 320px;
+            margin-top: -320px;
+            margin-left: 800px;
+            background-image: linear-gradient(25deg, #5026d1, #785bd3, #938ad4, #a8b9d3)
+        }
+
+        .a2 img {
+
+            width: 50px;
+            height: 50px;
+        }
+
+        .a2 p {
+            margin-left: 50px;
+            margin-top: -30px;
+        }
+
+        .tap2 {
+            float: left;
+        }
+
+        .tap2 ul {
+            margin-top: 0px;
+            width: 157px;
+            height: 29px;
+            margin-left: 20px;
+            padding: 0px;
+            padding-top: 4px;
+            padding-bottom: 2px;
+            border-radius: 20px;
+            background-color: #e0e0e0;
+        }
+
+        .tap2 li {
+            float: left;
+            font-size: 14px;
+            text-align: center;
+            width: 70px;
+            height: 28px;
+            border-radius: 30px;
+            line-height: 28px;
+            margin-left: 7px;
+            cursor: pointer;
+        }
+
+        .active2 {
+            background-color: #1296db;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px #fff;
+        }
+
+        .y2s {
+            display: none;
+            width: 530px;
+            height: 160px;
+            margin-left: 35px;
+            background-image: linear-gradient(135deg, #FFD26F 10%, #3677FF 100%);
+        }
+
+        .y2l {
+            cursor: pointer;
+            width: 125px;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 25px;
+            padding-left: 15px;
+            position: relative;
+            margin-top: 30px;
+            float: left;
+            background-image: -moz-linear-gradient(0deg, rgb(153, 255, 204), rgb(255, 163, 243));
+
+            background-image: -webkit-linear-gradient(0deg, rgb(153, 255, 204), rgb(255, 163, 243));
+
+            background-image: linear-gradient(0deg, rgb(153, 255, 204), rgb(255, 163, 243));
+        }
+
+        .y2 span {
+            position: absolute;
+            right: 10px;
+            line-height: 30px;
+            color: #e8e9f2;
+        }
+
+        .y2l:hover {
+            background-image: linear-gradient(25deg, #778b2f, #77915f, #71978b, #5f9db7);
+            top: -2px;
+        }
+
+        .y2l:hover span {
+            transform: rotate(90deg);
+        }
+
+        /* 3 */
+        .a3 {
+            width: 600px;
+            height: 320px;
+            margin-top: 30px;
+            margin-left: 100px;
+            background-image: linear-gradient(25deg, #5877d4, #929dde, #c2c6e7, #f0f0f0)
+        }
+
+        .a3 img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .a3 p {
+            margin-left: 50px;
+            margin-top: -30px;
+        }
+
+        .y3s {
+            margin-left: 35px;
+            width: 530px;
+            height: 200px;
+            background-image: linear-gradient(25deg, #5ac2fe, #a9d5c6, #d3e98a, #efff38)
+        }
+
+        .y3l {
+            cursor: pointer;
+            width: 135px;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 15px;
+            padding-left: 15px;
+            position: relative;
+            margin-top: 30px;
+            float: left;
+            background-image: linear-gradient(135deg, #EECE13 10%, #B210FF 100%);
+        }
+
+        .y3 span {
+            position: absolute;
+            right: 10px;
+            line-height: 30px;
+            color: #e8e9f2;
+        }
+
+        .y3l:hover {
+            color: #1296db;
+            top: -2px;
+        }
+
+        .y3l:hover span {
+            transform: rotate(90deg);
+        }
+
+        /* 4 */
+        .a4 {
+            position: relative;
+            width: 600px;
+            height: 320px;
+            margin-top: -320px;
+            margin-left: 800px;
+            background-image: linear-gradient(25deg, #f01313, #e57d5d, #c4bca6, #63f5f5);
+        }
+
+        .a4 img {
+            width: 50px;
+            height: 50px;
+            margin-top: 5px;
+        }
+
+        .a4 p {
+            margin-left: 50px;
+            margin-top: -30px;
+        }
+
+        .y4s {
+            position: absolute;
+            left: 35px;
+            width: 530px;
+            height: 200px;
+            background-image: -moz-linear-gradient(45deg, rgb(189, 255, 214), rgb(179, 198, 255));
+
+            background-image: -webkit-linear-gradient(45deg, rgb(189, 255, 214), rgb(179, 198, 255));
+
+            background-image: linear-gradient(45deg, rgb(189, 255, 214), rgb(179, 198, 255));
+        }
+
+        .y4l {
+            cursor: pointer;
+            width: 135px;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 15px;
+            padding-left: 15px;
+            position: relative;
+            margin-top: 30px;
+            float: left;
+            background-image: linear-gradient(25deg, #a07763, #b3967b, #c5b695, #d6d6af)
+        }
+
+        .y4 span {
+            position: absolute;
+            right: 10px;
+            line-height: 30px;
+            color: #e8e9f2;
+        }
+
+        .y4l:hover {
+            background-image: linear-gradient(25deg, #5187c7, #4c94bf, #44a1b7, #37aeae);
+            top: -2px;
+        }
+
+        .y4l:hover span {
+            transform: rotate(90deg);
+        }
+
+        .y1 p,
+        .y2 p,
+        .y3 p,
+        .y4 p {
+            margin-top: -38px;
+            margin-left: 25px;
+        }
+
+        .y1 img,
+        .y2 img,
+        .y3 img,
+        .y4 img {
+            width: 30px;
+            height: 30px;
+            margin-left: -12px;
+            margin-top: 0px;
+        }
+
+        /* 放最下面 */
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a1">
+        <img src="https://i.52112.com/icon/jpg/256/20171213/10743/564563.jpg" alt="书图标">
+        <p>阅读</p>
+        <div class="tap1">
+            <ul>
+                <li class="l1 active1">阅读小说</li>
+                <li class="l1">阅读漫画</li>
+            </ul>
+            <div class="y1">
+                <div class="y1s active">
+                    <a href="https://www.jiumodiary.com/" target="blank">
+                        <div class="y1l"><img style="color: rgb(18, 155, 185);"
+                                src="https://tse3-mm.cn.bing.net/th/id/OIP-C.B0tfpTR7bnlHpVLliVFeNQAAAA?w=150&amp;h=150&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.25&amp;pid=1.7">
+                            <p>鸠摩搜书</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.kuaisoumao.com/" target="blank">
+                        <div class="y1l"><img drag-img="https://i02piccdn.sogoucdn.com/ca8b4b4f2584f91a"
+                                data-src="https://i02piccdn.sogoucdn.com/ca8b4b4f2584f91a"
+                                src="https://i02piccdn.sogoucdn.com/ca8b4b4f2584f91a">
+                            <p>快搜猫</p> <span style="margin-top: -47px;"> ></span>
+                        </div>
+                    </a>
+                    <a href="https://weread.qq.com/" target="blank">
+                        <div class="y1l"><img drag-img="https://i03piccdn.sogoucdn.com/a83c65cbad5e68e3"
+                                data-src="https://i03piccdn.sogoucdn.com/a83c65cbad5e68e3"
+                                src="https://i03piccdn.sogoucdn.com/a83c65cbad5e68e3">
+                            <p>微信读书</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://du.163.com/" target="blank">
+                        <div class="y1l"><img style="color: rgb(151, 52, 55);"
+                                src="https://tse2-mm.cn.bing.net/th/id/OIP-C.Fapcxk3IEFqDF1i7bD1ligAAAA?w=150&amp;h=150&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.25&amp;pid=1.7">
+                            <p>网易蜗牛</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.bookben.net/" target="blank">
+                        <div class="y1l"><img style="color: rgb(199, 159, 4);"
+                                src="https://tse3-mm.cn.bing.net/th/id/OIP-C.x3RI2jVk1b7IHpnu9kqovgHaHa?w=199&amp;h=199&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.25&amp;pid=1.7">
+                            <p>书本网</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.kanshutang.org/" target="blank">
+                        <div class="y1l"><img
+                                src="https://cdn-icons.flaticon.com/png/128/3145/premium/3145866.png?token=exp=1640011458~hmac=6f9ff12e287244dcbae54213f09aee3d"
+                                data-src="https://cdn-icons.flaticon.com/png/128/3145/premium/3145866.png?token=exp=1640011458~hmac=6f9ff12e287244dcbae54213f09aee3d">
+                            <p>看书堂</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="y1s">
+                    <a href="https://www.soman.com/" target="blank">
+                        <div class="y1l"><img class="mimg vimgld" style="color: rgb(186, 4, 120);"
+                                src="https://tse1-mm.cn.bing.net/th/id/OIP-C.EcYtmQg9Xpl2c30YInVzBwHaF7?w=239&amp;h=191&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.25&amp;pid=1.7">
+                            <p style="margin-left: 45px;">搜漫 </p><span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.dm5.com/" target="blank">
+                        <div class="y1l"><img style="color: rgb(198, 147, 5);"
+                                src="https://tse3-mm.cn.bing.net/th/id/OIP-C._MKMSV3WuX8IdxWuFd3knwAAAA?w=161&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.25&amp;pid=1.7">
+                            <p>漫画人</p> <span style="margin-top: -47px;"> ></span>
+                        </div>
+                    </a>
+                    <a href="https://www.mhgui.com/" target="blank">
+                        <div class="y1l"><img src="https://i.52112.com/icon/jpg/256/20210716/123967/5294030.jpg">
+                            <p>漫画柜</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.mm1316.com/" target="blank">
+                        <div class="y1l"><img src="https://i.52112.com/icon/jpg/256/20210804/125959/5384517.jpg">
+                            <p>1316漫画</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.gracg.com/" target="blank">
+                        <div class="y1l"><img src="https://i.52112.com/icon/jpg/256/20200707/82943/3592089.jpg">
+                            <p>涂鸦王国</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="a2">
+        <img class="lazy" src="//wimg.588ku.com/gif620/20/08/13/fba3ec0657cf8eaeaa60f6fecac106aa.gif"
+            data-original="//wimg.588ku.com/gif620/20/08/13/fba3ec0657cf8eaeaa60f6fecac106aa.gif"
+            style="display: block;">
+        <p>音乐</p>
+        <div class="tap2">
+            <ul>
+                <li class="l2 active2">在线音乐</li>
+                <li class="l2">无损音乐</li>
+            </ul>
+            <div class="y2">
+                <div class="y2s active">
+                    <a href="https://tonzhon.com/" target="blank">
+                        <div class="y2l"><img src="https://i.52112.com/icon/jpg/256/20170928/6311/411663.jpg">
+                            <p>铜钟音乐</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://flac.life/" target="blank">
+                        <div class="y2l"><img src="https://i.52112.com/icon/jpg/256/20190929/60865/2684852.jpg">
+                            <p>无损生活</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="http://lcoc.top/m666/" target="blank">
+                        <div class="y2l"><img src="https://i.52112.com/icon/jpg/256/20210709/122937/5251790.jpg">
+                            <p>蓝调音乐</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="http://music.vaiwan.com/" target="blank">
+                        <div class="y2l"><img src="https://i.52112.com/icon/jpg/256/20201117/98919/4285675.jpg">
+                            <p>音乐下载器</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="y2s">
+                    <a href="https://www.xlebbs.com/" target="blank">
+                        <div class="y2l"><img src="https://i.52112.com/icon/jpg/256/20190929/60986/2689741.jpg">
+                            <p>享乐音乐</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="http://bbs.musicool.cn/" target="blank">
+                        <div class="y2l"><img src="https://i.52112.com/icon/jpg/256/20181212/26330/1317130.jpg">
+                            <p>炫音音乐</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="http://www.91tingge.com/" target="blank">
+                        <div class="y2l"><img src="https://i.52112.com/icon/jpg/256/20181212/26328/1317074.jpg">
+                            <p>91听歌网</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="http://www.ape-flac.com/" target="blank">
+                        <div class="y2l"><img src="https://i.52112.com/icon/jpg/256/20190227/31549/1556336.jpg">
+                            <p>搜无损网</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.cdbao.net/" target="blank">
+                        <div class="y2l"><img src="https://i.52112.com/icon/jpg/256/20190513/39354/1869818.jpg">
+                            <p>CD包音乐</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div class="a3">
+        <img src="https://cdn-icons-png.flaticon.com/128/2490/2490507.png"
+            data-src="https://cdn-icons-png.flaticon.com/128/2490/2490507.png" alt="Eiffel tower">
+        <p>排行榜</p>
+        <div class="tap3">
+            <div class="y3">
+                <div class="y3s">
+                    <a href="https://www.pearvideo.com/popular" target="blank">
+                        <div class="y3l"><img src="https://i.52112.com/icon/jpg/256/20201126/100348/4089327.jpg">
+                            <p>梨视频排行</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.zcool.com.cn/top/index.do" target="blank">
+                        <div class="y3l"><img src="https://i.52112.com/icon/jpg/256/20180222/12443/620274.jpg">
+                            <p>站酷榜单</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.qimai.cn/rank/globalrank" target="blank">
+                        <div class="y3l"><img src="https://i.52112.com/icon/jpg/256/20200608/80028/3295389.jpg">
+                            <p>APP全球榜</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://ys.endata.cn/BoxOffice/Movie" target="blank">
+                        <div class="y3l"><img src="https://i.52112.com/icon/jpg/256/20190807/52470/2372235.jpg">
+                            <p>票房排行榜</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://dig.chouti.com/zone/news" target="blank">
+                        <div class="y3l"><img src="https://i.52112.com/icon/jpg/256/20171215/10828/823559.jpg">
+                            <p>抽屉新热榜</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.hurun.net/zh-CN/Home/Index" target="blank">
+                        <div class="y3l"><img src="https://i.52112.com/icon/jpg/256/20170331/5488/287074.jpg">
+                            <p>胡润百富</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://sharemoe.top/?VNK=cc35d3cb" target="blank">
+                        <div class="y3l"><img src="https://i.52112.com/icon/jpg/256/20170905/8687/493535.jpg">
+                            <p>插画排行榜</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 4 -->
+    <div class="a4">
+        <img src="https://cdn-icons-png.flaticon.com/128/6265/6265605.png"
+            data-src="https://cdn-icons-png.flaticon.com/128/6265/6265605.png" alt="Tool box">
+        <p>在线工具</p>
+        <div class="tap4">
+            <div class="y4">
+                <div class="y4s">
+                    <a href="http://24mail.chacuo.net/" target="blank">
+                        <div class="y4l"><img src="https://i.52112.com/icon/jpg/256/20210330/114238/4537270.jpg">
+                            <p>临时邮箱</p> <span style="margin-top: -47px;">></span>
+                        </div>
+                    </a>
+                    <a href="https://www.qrdream.com/" target="blank">
+                        <div class="y4l"><img src="https://i.52112.com/icon/jpg/256/20170721/7996/369978.jpg"><p>二维码生成</p> <span style="margin-top: -47px;">></span></div>
+                    </a>
+                    <a href="https://deershare.com/send" target="blank">
+                        <div class="y4l"><img src="https://i.52112.com/icon/jpg/256/20191120/67056/2898330.jpg"><p>小鹿快传</p> <span style="margin-top: -47px;">></span></div>
+                    </a>
+                    <a href="https://www.yciyun.com/" target="blank">
+                        <div class="y4l"><img src="https://i.52112.com/icon/jpg/256/20210802/125404/5358227.jpg"><p>易词云</p> <span  style="margin-top: -47px;">></span></div>
+                    </a>
+                    <a href="https://devtool.tech/tiny-image" target="blank">
+                        <div class="y4l"><img src="https://i.52112.com/icon/jpg/256/20201130/100803/4098650.jpg"><p style="margin-left: 45px;">微图</p> <span  style="margin-top: -47px;">></span></div>
+                    </a>
+                    <a href="https://www.cleverpdf.com/cn" target="blank">
+                        <div class="y4l"><img src="https://i.52112.com/icon/jpg/256/20210715/123724/5284866.jpg"><p>cleverPDF</p> <span  style="margin-top: -47px;">></span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var a1 = document.getElementsByClassName('a1');
+        var l1s = document.getElementsByClassName('l1');
+        console.log(l1s);
+        var y1s = document.getElementsByClassName('y1s');
+
+        for (i = 0; i < l1s.length; i++) {
+            l1s[i].setAttribute('index', i);
+            l1s[i].onclick = function () {
+                for (i = 0; i < l1s.length; i++) {
+                    l1s[i].className = 'l1';
+                }
+                this.className = 'l1 active1';
+                var index = this.getAttribute('index');
+                for (i = 0; i < y1s.length; i++) {
+                    y1s[i].style.display = 'none';
+                }
+                y1s[index].style.display = 'block';
+            }
+        }
+
+        var a2 = document.getElementsByClassName('a2');
+        var l2s = document.getElementsByClassName('l2');
+        var y2s = document.getElementsByClassName('y2s');
+
+        for (i = 0; i < l2s.length; i++) {
+            l2s[i].setAttribute('index', i);
+            l2s[i].onclick = function () {
+                for (i = 0; i < l2s.length; i++) {
+                    l2s[i].className = 'l2';
+                }
+                this.className = 'l2 active2';
+                var index = this.getAttribute('index');
+                for (i = 0; i < y2s.length; i++) {
+                    y2s[i].style.display = 'none';
+                }
+                y2s[index].style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
